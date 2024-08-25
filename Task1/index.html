@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Management Dashboard</title>
+  </head>
+  <body>
+    <div class="app">
+      <main class="project">
+        <div class="project-tasks">
+          <!-- Todo Section -->
+          <div class="project-column">
+            <div class="project-column-heading">
+              <h2 class="project-column-heading__title">TO DO</h2>
+            </div>
+            <div class="task" draggable="true">
+              <div class="task__tags">
+              </div>
+              <span style="color: red;">
+                <span>Sidebar not working</span>
+                <i class="fas fa-external-link"></i>
+              </span>
+              <div class="task__stats">
+                <span style="color: #111;">
+                  <i class="fas fa-calendar-alt"></i>
+                  <b> 28/04/2023,</b>
+                  <b> 1:03pm</b>
+                </span>
+              </div>
+            </div>
+              <div class="task" draggable="true">
+                <div class="task__tags">
+                </div>
+                <span style="color: red;">
+                    <span >Course search error</span>
+                    <i class="fas fa-external-link"></i>
+                  </span>
+                  <div class="task__stats">
+                    <span style="color: #111;">
+                      <i class="fas fa-calendar-alt"></i>
+                      <b> 15/04/2024,</b>
+                      <b> 2:42pm</b>
+                    </span>
+                  </div>
+              </div>
+          </div>
+          <!-- In Progress Section -->
+          <div class="project-column">
+            <div class="project-column-heading">
+              <h2 class="project-column-heading__title">IN PROGRESS</h2>
+            </div>
+            <div class="task" draggable="true">
+              <div class="task__tags">
+              </div>
+              <span style="color: red;">
+                <span>Responsive issue</span>
+                <i class="fas fa-external-link"></i>
+              </span>
+              <div class="task__stats">
+                <span style="color: #111;">
+                  <i class="fas fa-calendar-alt"></i>
+                  <b> 29/04/2023,</b>
+                  <b> 12:09pm</b>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Resolved Section -->
+          <div class="project-column">
+            <div class="project-column-heading">
+              <h2 class="project-column-heading__title">RESOLVED</h2>
+            </div>
+            <div class="completed" draggable="true">
+                <div class="task__tags">
+                </div>
+                <span style="color: green;">
+                <span>Undergraduate courses in Malaysia</span>
+                <i class="fas fa-external-link"></i>
+              </span>
+              <div class="task__stats">
+                <span style="color: #111;">
+                  <i class="fas fa-calendar-alt"></i>
+                  <b> 21/02/2023,</b>
+                  <b> 4:51pm</b>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
